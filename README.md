@@ -118,18 +118,6 @@ spark-submit --master MASTER target/scala-2.11/m3_yourid-assembly-1.0.jar --trai
 > sbt "run --json economics.json"
 ````
 
-## Package for submission
-
-Steps:
-
-    1. Ensure you only used the dependencies listed in ````build.sbt```` in this template, and did not add any other.
-    2. Remove ````project/project````, ````project/target````, and ````target/```` from each of the sub-directories ````optimizing````, ````scaling````, and ````economics````
-    3. Test that all previous commands correctly produce a JSON file (after downloading/reinstalling dependencies).
-    4. Remove the datasets (````data/ml-100k.zip````, ````data/ml-100k````, etc.), as well as the````project/project````, ````project/target````, and ````target/````.
-    5. Add your report and any other necessary files listed in the Milestone description (see ````Deliverables````).
-    6. Zip the archive.
-    7. Submit to the TA for grading.
-
 # References
 
 Essential sbt: https://www.scalawilliam.com/essential-sbt/
